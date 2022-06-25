@@ -35,4 +35,4 @@ If you are having issues, please let us know. Reach me via [Email](mailto:shayan
 
 ## License
 
-The project is licensed under the MIT license. See the [LICENSE](./LICENSE.txt) file for details.
+The project is licensed under the MIT license. See the [LICENSE](./LICENSE) file for details.
