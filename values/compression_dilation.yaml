@@ -1,0 +1,6 @@
+fuzzy_parameters: 
+  - primary_link_factor : 0.75
+  - secondary_link_factor: 5
+  - charge_factor : 1
+  - stability_factor: 1
+  - connection_factor: 1

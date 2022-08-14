@@ -3,8 +3,10 @@
 Program ment to simulate different link scenarios for UAV-UAV link as well as UAV-ground links. 
 
 - Linkbudget calculations as per urban model of [ COST 231-Walfish-Ikegami Model](http://www.ee.bilkent.edu.tr/~microwave/programs/wireless/prop/costWI.htm)
+- Fuzzy Logic  Drone Head Selection
+- Fuzzy logic parameter adjustment using NS-3(TBD)
+
 - Protocol (TBD)
-- Formations (TBD)
 - To be added
 
 ## Installation

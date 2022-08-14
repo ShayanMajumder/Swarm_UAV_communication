@@ -6,9 +6,9 @@ def LOS_loss(fc,d):
     '''
 
     if (d<0.02) or (d>5):
-        raise Exception("Distance out of range")
-    elif ( fc<800 ) or (fc>2000):
-        raise Exception("Frequency out of range")
+        raise Exception("DistanceOutOfRange")
+    elif ( fc<800 ) or (fc>2400):
+        raise Exception("FrequencyOutOfRange")
 
     p = 42.6 + 26*np.log(d) + 20*np.log(fc)
 

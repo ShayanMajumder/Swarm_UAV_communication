@@ -3,7 +3,7 @@ import numpy as np
 def NLOS_loss(fc,d, w = 12, hm = 2,hb = 26,hr = 75, phi = 45, dense = False, b = 12):
     '''
     Here d is in units of kilometers, fc is the carrier frequency in MHz,
-    w is the width of the valley in meters, hm is eight of MS antenna,
+    w is the width of the valley in meters, hm is height of MS antenna,
     hb is height of the base antenna, hr is height of the obstacle
     phi is the angle between the street orientation and the direction of incidence in degrees
     dense tells the density of the place, b is distance between objects
@@ -11,15 +11,15 @@ def NLOS_loss(fc,d, w = 12, hm = 2,hb = 26,hr = 75, phi = 45, dense = False, b =
     '''
 
     if ((d<0.02) or (d>5)):
-        raise Exception("Distance out of range")
-    elif ((fc<800) or (fc>2000)):
-        raise Exception("Frequency out of range")
+        raise Exception("DistanceOutOfRange")
+    elif ((fc<800) or (fc>2400)):
+        raise Exception("FrequencyOutOf Range")
     elif ((hm<1) or (hm>3)):
-        raise Exception("Hm out of range")
+        raise Exception("HmOutOfRange")
     elif ((hb<4) or (hb>50)):
-        raise Exception("Hb out of range")
+        raise Exception("HbOutOfRange")
     elif ((phi<0) or (phi>90)):
-        raise Exception("phi out of range")
+        raise Exception("phiOutOfRange")
 
     p_fspl = 32.4 + 20*np.log(d) + 20*np.log(fc) # free space path loss
 
